@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  runtimeConfig: {
-    openApiKey: process.env.OPENAI_API_KEY,
-  },
   devServerHandlers: [],
   modules: ["@nuxtjs/tailwindcss"],
   css: ["~/assets/css/tailwind.css"],

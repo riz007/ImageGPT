@@ -7,8 +7,6 @@ export default defineEventHandler(async (event) => {
     const size = "512x512";
     const responseFormat = "url";
     const model = "image-alpha-001";
-    const apiKey = `${process.env.OPENAI_API_KEY}`;
-
     const url = `https://api.openai.com/v1/images/generations`;
     const payload: GenerateImagePayload = {
       prompt,
@@ -20,7 +18,7 @@ export default defineEventHandler(async (event) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify(payload),
     });
