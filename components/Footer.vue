@@ -16,7 +16,7 @@
       <p>
         Powered with
         <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
-          >Vercel</a
+          >Netlify</a
         >
       </p>
     </div>
