@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     strict: true,
   },
   runtimeConfig: {
-    openApiKey: "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",
+    openApiKey: process.env.OPENAI_API_KEY,
   },
   devServerHandlers: [],
   modules: ["@nuxtjs/tailwindcss"],
