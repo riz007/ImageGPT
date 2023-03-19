@@ -24,11 +24,6 @@ export default defineEventHandler(async (event) => {
       },
       body: JSON.stringify(payload),
     });
-    if (response.status !== 200) {
-      throw new Error(
-        `Failed to generate image, status code: ${response.status}`
-      );
-    }
     return response;
   } catch (error: unknown) {
     if (error instanceof Error) {
