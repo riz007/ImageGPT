@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     const size = "512x512";
     const responseFormat = "url";
     const model = "image-alpha-001";
-    const apiKey = `${useRuntimeConfig().openApiKey}`;
+    const apiKey = `${process.env.OPENAI_API_KEY}`;
 
     const url = `https://api.openai.com/v1/images/generations`;
     const payload: GenerateImagePayload = {
