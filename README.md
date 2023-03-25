@@ -1,6 +1,6 @@
 # ImageGPT
 
-Look at the [ImageGPT website](https://https://image-gpt.vercel.app) to learn more.
+Look at the [ImageGPT website](https://image-gpt.vercel.app) to learn more.
 
 ## Setup
 
